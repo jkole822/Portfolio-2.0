@@ -17,11 +17,76 @@
 		/>
 		<!-- StyleSheet -->
 		<link rel="stylesheet" href="./css/style.css" />
+
 		<!--Let browser know website is optimized for mobile-->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	</head>
 
 	<body>
+		<!-- Name -->
+		<h1>Kole Gasior</h1>
+
+		<!-- Role -->
+		<h2>Full Stack Web Developer</h2>
+
+		<!-- Greeting -->
+		<h2>Welcome to my portfolio.</h2>
+
+		<!-- Profile Picture -->
+		<img
+			id="profile-pic-image"
+			src="./images/profile-pic.jpg"
+			alt="profile-pic"
+		/>
+
+		<!-- Brand Statement -->
+		<p>
+			JavaScript developer leveraging a science background to develop quality
+			and user-friendly web applications and websites. Since the beginning of
+			2020, I have acquired knowledge and experience with technologies such as
+			JavaScript, jQuery, HTML, CSS, React, Redux, Node, Express, MongoDB, SQL,
+			ORMs, Templating Engines, and Testing Frameworks. I am currently enrolled
+			in a program for Web Development at the Ohio State University where I am
+			expanding and polishing my skill set. Prior work and educational
+			experience has been formative to my high attention-to-detail and degree of
+			accuracy, organizational skills, and critical thinking ability which,
+			alongside my proven history of strong work ethic and efficiently handling
+			multiple responsibilities, serve to achieve challenging and complex
+			objectives such as developing fully-functional, intuitive, and engaging
+			web applications. I constantly strive to improve my expertise and am eager
+			share my passion with an innovative team dedicated to develop and deliver
+			quality applications.
+		</p>
+
+		<!-- Tech Skills -->
+		<h2>Tech Skills</h2>
+		<div class="row">
+			<ul class="col s4">
+				<li>HTML</li>
+				<li>CSS</li>
+				<li>JavaScript</li>
+				<li>jQuery</li>
+				<li>React</li>
+				<li>Redux</li>
+			</ul>
+			<ul class="col s4">
+				<li>Node</li>
+				<li>Express</li>
+				<li>Handlebars/EJS</li>
+				<li>MongoDB</li>
+				<li>Mongoose</li>
+				<li>Passport</li>
+			</ul>
+			<ul class="col s4">
+				<li>SQL</li>
+				<li>mySQL</li>
+				<li>Sequelize</li>
+				<li>Jest</li>
+				<li>Enzyme</li>
+			</ul>
+		</div>
+
+		<!-- Projects -->
 		<div class="grid">
 			<% projects.forEach(function(project) { %>
 			<img
@@ -30,6 +95,7 @@
 			/>
 			<% }); %>
 		</div>
+
 		<!-- jQuery -->
 		<script src="https://code.jquery.com/jquery.js"></script>
 		<!-- Materialize CSS JavaScript -->
