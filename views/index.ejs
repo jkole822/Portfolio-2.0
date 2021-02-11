@@ -3,11 +3,13 @@
 	<head>
 		<meta charset="utf-8" />
 		<title>JKG Portfolio</title>
+
 		<!--Import Google Icon Font-->
 		<link
 			href="https://fonts.googleapis.com/icon?family=Material+Icons"
 			rel="stylesheet"
 		/>
+
 		<!--Import Materialize CSS -->
 		<link
 			type="text/css"
@@ -15,6 +17,13 @@
 			href="./css/materialize.min.css"
 			media="screen,projection"
 		/>
+
+		<!-- Import Font Awesome -->
+		<script
+			src="https://kit.fontawesome.com/3d80921411.js"
+			crossorigin="anonymous"
+		></script>
+
 		<!-- StyleSheet -->
 		<link rel="stylesheet" href="./css/style.css" />
 
@@ -89,10 +98,40 @@
 		<!-- Projects -->
 		<div class="grid">
 			<% projects.forEach(function(project) { %>
-			<img
-				class="grid-item"
-				src="data:image/png;base64,<%= project.image.toString('base64') %>"
-			/>
+			<div class="card grid-item">
+				<div class="content">
+					<img
+						class="front project-image"
+						src="data:image/png;base64,<%= project.image.toString('base64') %>"
+					/>
+					<div class="back">
+						<% if (project.title) { %>
+						<p class="project-title"><%= project.title %></p>
+						<% } %> <% if (project.description) { %>
+						<p><%= project.description %></p>
+						<% } %> <% if (project.github) { %>
+						<p>
+							<a href="<%= project.github %>" target="_blank"
+								><i class="fab fa-github"></i
+							></a>
+						</p>
+						<% } %> <% if (project.project_link) { %>
+						<p>
+							<a href="<%= project.project_link %>" target="_blank"
+								>View Project</a
+							>
+						</p>
+						<% } %> <% if (project.technology.length) { %>
+						<p class="header-tech">Technology</p>
+						<ul>
+							<% project.technology.forEach(function(tech) { %>
+							<li><%= tech %></li>
+							<% }) %>
+						</ul>
+						<% } %>
+					</div>
+				</div>
+			</div>
 			<% }); %>
 		</div>
 
