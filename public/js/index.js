@@ -8,6 +8,7 @@ $(document).ready(function () {
 
 		$(this).parents(".card").width(width).height(height);
 	});
+
 	// Isotope
 	$(".grid").isotope({
 		itemSelector: ".grid-item",
