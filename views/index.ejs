@@ -24,6 +24,12 @@
 			crossorigin="anonymous"
 		></script>
 
+		<!-- Import Locomotive Scroll CSS -->
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"
+		/>
+
 		<!-- StyleSheet -->
 		<link rel="stylesheet" href="./css/style.css" />
 
@@ -31,112 +37,233 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	</head>
 
-	<body>
+	<body data-scroll-container>
+		<div data-scroll-section id="background"></div>
+
 		<!-- Name -->
-		<h1>Kole Gasior</h1>
+		<div data-scroll-section class="flex-start">
+			<h1
+				style="margin-left: 100px; color: rgb(78, 78, 78)"
+				class="fade-in small-space top-space"
+				data-scroll
+				data-scroll-class="appear"
+				data-scroll-repeat="true"
+				data-scroll-direction="horizontal"
+				data-scroll-speed="-3"
+			>
+				Kole Gasior
+			</h1>
+		</div>
 
 		<!-- Role -->
-		<h2>Full Stack Web Developer</h2>
+		<div data-scroll-section class="flex-end">
+			<h2
+				style="margin-right: 100px"
+				class="fade-in big-space"
+				data-scroll
+				data-scroll-class="appear"
+				data-scroll-repeat="true"
+				data-scroll-direction="horizontal"
+				data-scroll-speed="5"
+			>
+				Full Stack Web Developer
+			</h2>
+		</div>
 
 		<!-- Greeting -->
-		<h2>Welcome to my portfolio.</h2>
+		<div data-scroll-section class="flex-center">
+			<h2
+				id="stick"
+				class="fade-in big-space"
+				data-scroll
+				data-scroll-class="appear"
+				data-scroll-repeat="true"
+				data-scroll-direction="vertical"
+				data-scroll-speed="2"
+			>
+				Welcome to my portfolio.
+			</h2>
+		</div>
 
-		<!-- Profile Picture -->
-		<img
-			id="profile-pic-image"
-			src="./images/profile-pic.jpg"
-			alt="profile-pic"
-		/>
+		<!-- About Me: Profile Picture -->
+		<div class="container row valign-wrapper small-space" data-scroll-section>
+			<img
+				data-scroll
+				data-scroll-class="appear"
+				data-scroll-repeat="true"
+				data-scroll-direction="horizontal"
+				data-scroll-speed="-0.5"
+				class="col s4 fade-in-fast"
+				id="profile-image"
+				src="./images/profile-pic.jpg"
+				alt="profile-image"
+			/>
 
-		<!-- Brand Statement -->
-		<p>
-			JavaScript developer leveraging a science background to develop quality
-			and user-friendly web applications and websites. Since the beginning of
-			2020, I have acquired knowledge and experience with technologies such as
-			JavaScript, jQuery, HTML, CSS, React, Redux, Node, Express, MongoDB, SQL,
-			ORMs, Templating Engines, and Testing Frameworks. I am currently enrolled
-			in a program for Web Development at the Ohio State University where I am
-			expanding and polishing my skill set. Prior work and educational
-			experience has been formative to my high attention-to-detail and degree of
-			accuracy, organizational skills, and critical thinking ability which,
-			alongside my proven history of strong work ethic and efficiently handling
-			multiple responsibilities, serve to achieve challenging and complex
-			objectives such as developing fully-functional, intuitive, and engaging
-			web applications. I constantly strive to improve my expertise and am eager
-			share my passion with an innovative team dedicated to develop and deliver
-			quality applications.
-		</p>
+			<!-- About Me: Brand Statement -->
+			<p
+				data-scroll
+				data-scroll-class="appear"
+				data-scroll-repeat="true"
+				data-scroll-direction="horizontal"
+				data-scroll-speed="0.5"
+				class="col s8 fade-in-fast"
+				id="brand-statement"
+			>
+				JavaScript developer leveraging a science background to develop quality
+				and user-friendly web applications and websites. Since the beginning of
+				2020, I have acquired knowledge and experience with technologies such as
+				JavaScript, jQuery, HTML, CSS, React, Redux, Node, Express, MongoDB,
+				SQL, ORMs, Templating Engines, and Testing Frameworks. I am currently
+				enrolled in a program for Web Development at the Ohio State University
+				where I am expanding and polishing my skill set. Prior work and
+				educational experience has been formative to my high attention-to-detail
+				and degree of accuracy, organizational skills, and critical thinking
+				ability which, alongside my proven history of strong work ethic and
+				efficiently handling multiple responsibilities, serve to achieve
+				challenging and complex objectives such as developing fully-functional,
+				intuitive, and engaging web applications. I constantly strive to improve
+				my expertise and am eager share my passion with an innovative team
+				dedicated to develop and deliver quality applications.
+			</p>
+		</div>
 
 		<!-- Tech Skills -->
-		<h2>Tech Skills</h2>
-		<div class="row">
-			<ul class="col s4">
-				<li>HTML</li>
-				<li>CSS</li>
-				<li>JavaScript</li>
-				<li>jQuery</li>
-				<li>React</li>
-				<li>Redux</li>
-			</ul>
-			<ul class="col s4">
-				<li>Node</li>
-				<li>Express</li>
-				<li>Handlebars/EJS</li>
-				<li>MongoDB</li>
-				<li>Mongoose</li>
-				<li>Passport</li>
-			</ul>
-			<ul class="col s4">
-				<li>SQL</li>
-				<li>mySQL</li>
-				<li>Sequelize</li>
-				<li>Jest</li>
-				<li>Enzyme</li>
-			</ul>
+		<div class="container small-space" id="tech-skills" data-scroll-section>
+			<h2
+				class="center-align fade-in"
+				data-scroll
+				data-scroll-class="appear"
+				data-scroll-repeat="true"
+				data-scroll-direction="vertical"
+				data-scroll-speed="3"
+			>
+				Tech Skills
+			</h2>
+			<div
+				class="row fade-in"
+				data-scroll
+				data-scroll-class="appear"
+				data-scroll-repeat="true"
+				data-scroll-direction="vertical"
+				data-scroll-speed="5"
+			>
+				<ul class="col s4">
+					<li class="center-align">HTML</li>
+					<li class="center-align">CSS</li>
+					<li class="center-align">JavaScript</li>
+					<li class="center-align">jQuery</li>
+					<li class="center-align">React</li>
+					<li class="center-align">Redux</li>
+				</ul>
+				<ul class="col s4">
+					<li class="center-align">Node</li>
+					<li class="center-align">Express</li>
+					<li class="center-align">Handlebars/EJS</li>
+					<li class="center-align">MongoDB</li>
+					<li class="center-align">Mongoose</li>
+					<li class="center-align">Passport</li>
+				</ul>
+				<ul class="col s4">
+					<li class="center-align">SQL</li>
+					<li class="center-align">mySQL</li>
+					<li class="center-align">Sequelize</li>
+					<li class="center-align">Jest</li>
+					<li class="center-align">Enzyme</li>
+				</ul>
+			</div>
 		</div>
 
 		<!-- Projects -->
-		<div class="grid">
-			<% projects.forEach(function(project) { %>
-			<div class="card grid-item">
-				<div class="content">
-					<img
-						class="front project-image"
-						src="data:image/png;base64,<%= project.image.toString('base64') %>"
-					/>
-					<div class="back">
-						<% if (project.title) { %>
-						<p class="project-title"><%= project.title %></p>
-						<% } %> <% if (project.description) { %>
-						<p><%= project.description %></p>
-						<% } %> <% if (project.github) { %>
-						<p>
-							<a href="<%= project.github %>" target="_blank"
-								><i class="fab fa-github"></i
-							></a>
-						</p>
-						<% } %> <% if (project.project_link) { %>
-						<p>
-							<a href="<%= project.project_link %>" target="_blank"
-								>View Project</a
-							>
-						</p>
-						<% } %> <% if (project.technology.length) { %>
-						<p class="header-tech">Technology</p>
-						<ul>
-							<% project.technology.forEach(function(tech) { %>
-							<li><%= tech %></li>
-							<% }) %>
-						</ul>
-						<% } %>
+		<div data-scroll-section>
+			<h2
+				class="fade-in"
+				style="padding-left: 250px"
+				data-scroll
+				data-scroll-class="appear"
+				data-scroll-repeat="true"
+				data-scroll-direction="horizontal"
+				data-scroll-speed="-7"
+			>
+				My Work
+			</h2>
+			<div id="dropdown-container">
+				<select>
+					<option value="" disabled selected>Filter by Technology</option>
+					<option value="*">All</option>
+					<option value="Jquery">jQuery</option>
+					<option value="React">React</option>
+					<option value="Redux">Redux</option>
+					<option value="Node">Node</option>
+					<option value="Express">Express</option>
+					<option value="Handlebars">Handlebars</option>
+					<option value="Mongodb">MongoDB</option>
+					<option value="Mongoose">Mongoose</option>
+					<option value="Passport">Passport</option>
+					<option value="Sql">SQL</option>
+					<option value="Mysql">mySQL</option>
+					<option value="Sequelize">Sequelize</option>
+					<option value="Jest">Jest</option>
+					<option value="Enzyme">Enzyme</option>
+				</select>
+			</div>
+
+			<div
+				id="my-projects"
+				data-scroll
+				data-scroll-class="appear"
+				data-scroll-repeat="true"
+				data-scroll-direction="vertical"
+				data-scroll-speed="2"
+				class="grid fade-in"
+			>
+				<% projects.forEach(function(project) { %> <% var techList = '' %> <%
+				project.technology.forEach(function(tech) { %> <% techList += tech + " "
+				%> <% }) %>
+				<div data-tech="<%= techList%>" class="card grid-item">
+					<div class="content">
+						<img
+							class="front project-image"
+							src="data:image/png;base64,<%= project.image.toString('base64') %>"
+						/>
+						<div class="back">
+							<% if (project.title) { %>
+							<p class="project-title"><%= project.title %></p>
+							<% } %> <% if (project.description) { %>
+							<p><%= project.description %></p>
+							<% } %> <% if (project.github) { %>
+							<p>
+								<a href="<%= project.github %>" target="_blank"
+									><i style="font-size: 2rem" class="fab fa-github"></i
+								></a>
+							</p>
+							<% } %> <% if (project.project_link) { %>
+							<p>
+								<a
+									href="<%= project.project_link %>"
+									target="_blank"
+									class="btn-small grey darken-3 grey-text text-lighten-2"
+									>View Project</a
+								>
+							</p>
+							<% } %> <% if (project.technology.length) { %>
+							<p class="header-tech">Technology</p>
+							<ul>
+								<% project.technology.forEach(function(tech) { %>
+								<li><%= tech %></li>
+								<% }) %>
+							</ul>
+							<% } %>
+						</div>
 					</div>
 				</div>
+				<% }); %>
 			</div>
-			<% }); %>
 		</div>
 
 		<!-- jQuery -->
 		<script src="https://code.jquery.com/jquery.js"></script>
+		<!-- Locomotive Scroll -->
+		<script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
 		<!-- Materialize CSS JavaScript -->
 		<script type="text/javascript" src="./js/materialize.min.js"></script>
 		<!-- Isotope JavaScript -->
