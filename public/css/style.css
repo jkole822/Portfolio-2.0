@@ -1,7 +1,87 @@
-/* html {
-	position: relative;
-	min-height: 100%;
-} */
+/* Tears START */
+#tear-one {
+	position: absolute;
+	top: 15%;
+	left: 25%;
+	font-size: 1.6rem;
+	color: rgb(25, 25, 25);
+}
+
+#tear-two {
+	position: absolute;
+	top: 40%;
+	left: 75%;
+	font-size: 2.5rem;
+	color: rgb(150, 150, 150);
+}
+
+#tear-three {
+	position: absolute;
+	top: 80%;
+	left: 40%;
+	font-size: 3rem;
+	color: rgb(150, 150, 150);
+}
+
+#tear-four {
+	position: absolute;
+	top: 110%;
+	left: 15%;
+	font-size: 3.7rem;
+	color: rgb(150, 150, 150);
+}
+
+#tear-five {
+	position: absolute;
+	top: 130%;
+	left: 85%;
+	font-size: 2.8rem;
+	color: rgb(150, 150, 150);
+}
+/* Tears END */
+
+/* Stars START */
+#star-one {
+	position: absolute;
+	top: 15%;
+	left: 90%;
+	font-size: 2.3rem;
+	color: rgb(25, 25, 25);
+}
+
+#star-two {
+	position: absolute;
+	top: 45%;
+	left: 10%;
+	font-size: 3.4rem;
+	color: rgb(25, 25, 25);
+}
+
+#star-three {
+	position: absolute;
+	top: 90%;
+	left: 80%;
+	font-size: 2rem;
+	color: rgb(150, 150, 150);
+}
+
+#star-four {
+	position: absolute;
+	top: 130%;
+	left: 35%;
+	font-size: 2rem;
+	color: rgb(150, 150, 150);
+}
+
+#star-five {
+	position: absolute;
+	top: 140%;
+	left: 50%;
+	font-size: 4rem;
+	z-index: 1;
+	color: rgb(150, 150, 150);
+}
+/* Stars END */
 
 body {
 	background-color: rgb(25, 25, 25);
@@ -103,7 +183,7 @@ body {
 
 #dropdown-container {
 	margin: 0 auto;
-	width: 30vw;
+	width: 50vw;
 }
 /* Dropdown END */
 
@@ -151,5 +231,9 @@ a {
 
 .small-space {
 	margin-bottom: 200px;
+}
+
+.smaller-space {
+	margin-bottom: 80px;
 }
 /* General Styles END */
