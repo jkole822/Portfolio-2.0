@@ -22,10 +22,6 @@ $(document).ready(function () {
 			$grid.isotope({ filter: tech });
 		} else {
 			$grid.isotope({ filter: `[data-tech*="${tech}"]` });
-			const height = $("html").height();
-			console.log(height);
-			$("body").height(height);
-			$("#background").height(height);
 		}
 	});
 
