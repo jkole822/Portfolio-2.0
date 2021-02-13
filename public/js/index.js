@@ -13,7 +13,6 @@ $(document).ready(function () {
 	const $grid = $(".grid").isotope({
 		itemSelector: ".grid-item",
 		layoutMode: "packery",
-		smartphone: { smooth: true },
 	});
 
 	// Isotope Filters
@@ -30,6 +29,8 @@ $(document).ready(function () {
 	const scroller = new LocomotiveScroll({
 		el: document.querySelector("[data-scroll-container]"),
 		smooth: true,
+		smartphone: { smooth: true },
+		tablet: { smooth: true },
 	});
 
 	const resizeProjectContainer = () => {
