@@ -29,7 +29,8 @@ $(document).ready(function () {
 	const scroller = new LocomotiveScroll({
 		el: document.querySelector("[data-scroll-container]"),
 		smooth: true,
-		smartphone: { smooth: true, resetNativeScroll: false },
+		smoothMobile: true,
+		smartphone: { smooth: true },
 		tablet: { smooth: true },
 	});
 
