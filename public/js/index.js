@@ -13,6 +13,7 @@ $(document).ready(function () {
 	const $grid = $(".grid").isotope({
 		itemSelector: ".grid-item",
 		layoutMode: "packery",
+		smartphone: { smooth: true },
 	});
 
 	// Isotope Filters
