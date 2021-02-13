@@ -67,7 +67,7 @@
 
 #star-four {
 	position: absolute;
-	top: 130%;
+	top: 140%;
 	left: 35%;
 	font-size: 2rem;
 	color: rgb(150, 150, 150);
@@ -75,7 +75,7 @@
 
 #star-five {
 	position: absolute;
-	top: 140%;
+	top: 130%;
 	left: 50%;
 	font-size: 4rem;
 	z-index: 1;
