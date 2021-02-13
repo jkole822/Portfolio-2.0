@@ -30,7 +30,6 @@ $(document).ready(function () {
 		el: document.querySelector("[data-scroll-container]"),
 		smooth: true,
 		smoothMobile: true,
-		resetNativeScroll: false,
 	});
 
 	const resizeProjectContainer = () => {
