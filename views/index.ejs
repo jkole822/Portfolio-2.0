@@ -201,21 +201,19 @@
 				data-scroll
 				data-scroll-class="appear"
 				data-scroll-repeat="true"
-				data-scroll-direction="horizontal"
-				data-scroll-speed="-2"
-				class="fade-in-fast"
+				data-scroll-direction="vertical"
+				class="fade-in"
 				id="profile-image"
 				src="./images/profile-pic.jpg"
 				alt="profile-image"
 			/>
 		</div>
-		<div class="container small-space" data-scroll-section>
+		<div class="container flex-center" data-scroll-section>
 			<!-- About Me: Brand Statement -->
 			<p
 				data-scroll
 				data-scroll-class="appear"
 				data-scroll-repeat="true"
-				data-scroll-direction="vertical"
 				class="fade-in"
 				id="brand-statement"
 			>
@@ -235,6 +233,18 @@
 				my expertise and am eager share my passion with an innovative team
 				dedicated to develop and deliver quality applications.
 			</p>
+		</div>
+		<div class="container small-space flex-center" data-scroll-section>
+			<a
+				data-scroll
+				data-scroll-class="appear"
+				data-scroll-repeat="true"
+				class="btn-large grey darken-3 grey-text text-lighten-2 waves-effect waves-light fade-in"
+				href="./assets/resume.pdf"
+				target="_blank"
+			>
+				View my resume
+			</a>
 		</div>
 
 		<!-- Tech Skills -->
@@ -352,7 +362,7 @@
 								<a
 									href="<%= project.project_link %>"
 									target="_blank"
-									class="btn-small grey darken-3 grey-text text-lighten-2"
+									class="btn-small grey darken-3 grey-text waves-effect waves-light text-lighten-2"
 									>View Project</a
 								>
 							</p>
@@ -374,7 +384,6 @@
 		<!-- jQuery -->
 		<script src="https://code.jquery.com/jquery.js"></script>
 		<!-- Locomotive Scroll -->
-		<script src="https://cdn.jsdelivr.net/npm/virtual-scroll@2.1.0/lib/virtualscroll.min.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
 		<!-- Materialize CSS JavaScript -->
 		<script type="text/javascript" src="./js/materialize.min.js"></script>
