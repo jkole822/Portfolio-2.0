@@ -61,7 +61,7 @@
 	position: absolute;
 	top: 90%;
 	left: 80%;
-	font-size: 2rem;
+	font-size: 1.5rem;
 	color: rgb(150, 150, 150);
 }
 
@@ -101,12 +101,13 @@ body {
 
 /* About Me START */
 #profile-image {
-	width: 30vw;
-	clip-path: circle(40% at 50% 40%);
+	width: 20vw;
+	border-radius: 20px;
 }
 
 #brand-statement {
 	text-align: justify;
+	line-height: 2.5;
 }
 /* About Me END */
 
@@ -188,6 +189,10 @@ body {
 /* Dropdown END */
 
 /* General Styles START */
+.header {
+	font-size: 2rem;
+}
+
 a {
 	color: rgb(55, 55, 55);
 }
@@ -237,3 +242,10 @@ a {
 	margin-bottom: 80px;
 }
 /* General Styles END */
+
+/* Medium and Large Screen Sizes */
+@media only screen and (max-width: 768px) {
+	.header {
+		font-size: 3rem;
+	}
+}
