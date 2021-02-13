@@ -101,7 +101,7 @@ body {
 
 /* About Me START */
 #profile-image {
-	width: 20vw;
+	width: 200px;
 	border-radius: 20px;
 }
 
@@ -189,8 +189,18 @@ body {
 /* Dropdown END */
 
 /* General Styles START */
+html {
+	font-size: 16px;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+	font-family: "Lato", sans-serif;
+}
+
 .header {
-	font-size: 2rem;
+	font-family: "Righteous", cursive;
+	font-size: 1.5rem;
 }
 
 a {
@@ -244,7 +254,7 @@ a {
 /* General Styles END */
 
 /* Medium and Large Screen Sizes */
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
 	.header {
 		font-size: 3rem;
 	}
