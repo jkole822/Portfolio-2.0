@@ -17,15 +17,15 @@ My web development project portfolio. Portfolio projects are managed with separa
 
 ### Header
 
-![Header](public/images/header.png)
+![Header](public/images/Header.png)
 
 ### About Me
 
-![About Me](public/images/about-me.png)
+![About Me](public/images/AboutMe.png)
 
 ### Projects
 
-![Projects](public/images/projects.png)
+![Projects](public/images/Projects.png)
 
 ## Technology
 
