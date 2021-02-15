@@ -7,7 +7,7 @@ $(document).ready(function () {
 		)
 	) {
 		// true for mobile device
-		$("#dropdown-container").css("display: none");
+		$("#dropdown-container").css("display", "none");
 	}
 
 	// Card Flip Sizing
