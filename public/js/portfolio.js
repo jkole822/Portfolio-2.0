@@ -36,14 +36,14 @@ $(document).ready(function () {
 });
 
 // Conditionally Render Dropdown
-// if (
-//     /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
-//         navigator.userAgent
-//     )
-// ) {
-//     // true for mobile device
-//     $("#dropdown-container").css("display", "none");
-// }
+if (
+	/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+		navigator.userAgent
+	)
+) {
+	// true for mobile device
+	$("#dropdown-container").css("display", "none");
+}
 
 // Card Flip Sizing
 $(".project-image").each(function () {
