@@ -45,56 +45,47 @@
 	</head>
 
 	<body data-scroll-container>
+		<!-- White Background -->
 		<div data-scroll-section id="background"></div>
 
 		<!-- Tears -->
 		<div data-scroll-section id="tear-one">
-			<i
-				data-scroll
-				data-scroll-speed="1"
-				data-scroll-direction="vertical"
-				data-scroll-repeat="true"
-				class="fas fa-tint"
-			></i>
+			<i data-scroll data-scroll-repeat="true" class="fas fa-tint"></i>
 		</div>
 		<div data-scroll-section id="tear-two">
 			<i
 				data-scroll
-				data-scroll-speed="2"
+				data-scroll-speed="-3"
 				data-scroll-direction="vertical"
 				data-scroll-repeat="true"
-				data-scroll
-				class="fas fa-tint"
+				class="fas fa-tint shapes"
 			></i>
 		</div>
 		<div data-scroll-section id="tear-three">
 			<i
 				data-scroll
-				data-scroll
-				data-scroll-speed="4"
+				data-scroll-speed="-1"
 				data-scroll-direction="vertical"
 				data-scroll-repeat="true"
-				class="fas fa-tint"
+				class="fas fa-tint shapes"
 			></i>
 		</div>
 		<div data-scroll-section id="tear-four">
 			<i
 				data-scroll
-				data-scroll
-				data-scroll-speed="2"
+				data-scroll-speed="-6"
 				data-scroll-direction="vertical"
 				data-scroll-repeat="true"
-				class="fas fa-tint"
+				class="fas fa-tint shapes"
 			></i>
 		</div>
 		<div data-scroll-section id="tear-five">
 			<i
 				data-scroll
-				data-scroll
-				data-scroll-speed="1"
+				data-scroll-speed="-1"
 				data-scroll-direction="vertical"
 				data-scroll-repeat="true"
-				class="fas fa-tint"
+				class="fas fa-tint shapes"
 			></i>
 		</div>
 
@@ -102,8 +93,6 @@
 		<div data-scroll-section id="star-one">
 			<i
 				data-scroll
-				data-scroll
-				data-scroll-speed="1"
 				data-scroll-direction="vertical"
 				data-scroll-repeat="true"
 				class="fas fa-star"
@@ -112,8 +101,7 @@
 		<div data-scroll-section id="star-two">
 			<i
 				data-scroll
-				data-scroll
-				data-scroll-speed="2"
+				data-scroll-speed="5"
 				data-scroll-direction="vertical"
 				data-scroll-repeat="true"
 				class="fas fa-star"
@@ -122,39 +110,34 @@
 		<div data-scroll-section id="star-three">
 			<i
 				data-scroll
-				data-scroll
-				data-scroll-speed="1"
-				data-scroll-direction="vertical"
+				data-scroll-speed="3"
 				data-scroll-repeat="true"
-				class="fas fa-star"
+				class="fas fa-star shapes"
 			></i>
 		</div>
 		<div data-scroll-section id="star-four">
 			<i
 				data-scroll
-				data-scroll
 				data-scroll-speed="1"
-				data-scroll-direction="vertical"
 				data-scroll-repeat="true"
-				class="fas fa-star"
+				class="fas fa-star shapes"
 			></i>
 		</div>
 		<div data-scroll-section id="star-five">
 			<i
 				data-scroll
-				data-scroll
 				data-scroll-speed="7"
 				data-scroll-direction="vertical"
 				data-scroll-repeat="true"
-				class="fas fa-star"
+				class="fas fa-star shapes"
 			></i>
 		</div>
 
 		<!-- Name -->
 		<div data-scroll-section class="flex-start">
 			<h1
-				style="margin-left: 100px; color: rgb(78, 78, 78)"
-				class="fade-in small-space top-space header"
+				style="margin-left: 100px; color: rgb(78, 78, 78); margin-top: 200px"
+				class="fade-in small-space header"
 				data-scroll
 				data-scroll-class="appear"
 				data-scroll-repeat="true"
@@ -176,7 +159,7 @@
 				data-scroll-direction="horizontal"
 				data-scroll-speed="5"
 			>
-				Full Stack Web Developer
+				Full Stack Web Developer <i class="fas fa-laptop-code"></i>
 			</h2>
 		</div>
 
@@ -192,6 +175,21 @@
 			>
 				Welcome to my portfolio.
 			</h2>
+		</div>
+
+		<!-- About Me -->
+		<div data-scroll-section class="flex-start">
+			<h1
+				style="margin-left: 100px"
+				class="fade-in smaller-space top-space header"
+				data-scroll
+				data-scroll-class="appear"
+				data-scroll-repeat="true"
+				data-scroll-direction="horizontal"
+				data-scroll-speed="-3"
+			>
+				About Me
+			</h1>
 		</div>
 
 		<!-- About Me: Profile Picture -->
@@ -214,7 +212,7 @@
 				data-scroll
 				data-scroll-class="appear"
 				data-scroll-repeat="true"
-				class="fade-in"
+				class="fade-in smaller-space"
 				id="brand-statement"
 			>
 				JavaScript developer leveraging a science background to develop quality
@@ -234,68 +232,85 @@
 				dedicated to develop and deliver quality applications.
 			</p>
 		</div>
-		<div class="container space flex-center" data-scroll-section>
-			<a
-				data-scroll
-				data-scroll-class="appear"
-				data-scroll-repeat="true"
-				class="btn-large grey darken-3 grey-text text-lighten-2 waves-effect waves-light fade-in"
-				href="./assets/resume.pdf"
-				target="_blank"
-			>
-				View my resume
-			</a>
+
+		<!-- About Me: Buttons -->
+		<div data-scroll-section>
+			<div class="container small-space flex-center">
+				<a
+					style="margin-right: 20px"
+					data-scroll
+					data-scroll-class="appear"
+					data-scroll-repeat="true"
+					class="btn-large grey darken-3 grey-text text-lighten-2 waves-effect waves-light fade-in"
+					href="./assets/resume.pdf"
+					target="_blank"
+				>
+					Resume <i class="fas fa-file right"></i>
+				</a>
+				<a
+					style="margin-left: 20px"
+					data-scroll
+					data-scroll-class="appear"
+					data-scroll-repeat="true"
+					class="btn-large grey darken-3 grey-text text-lighten-2 waves-effect waves-light fade-in"
+					href="/portfolio"
+				>
+					Projects <i class="fas fa-code right"></i>
+				</a>
+			</div>
 		</div>
 
 		<!-- Tech Skills -->
-		<div class="container smaller-space" id="tech-skills" data-scroll-section>
-			<h2
-				class="center-align fade-in header"
-				data-scroll
-				data-scroll-class="appear"
-				data-scroll-repeat="true"
-				data-scroll-direction="vertical"
-				data-scroll-speed="3"
-			>
-				Tech Skills
-			</h2>
-			<div
-				class="row fade-in"
-				data-scroll
-				data-scroll-class="appear"
-				data-scroll-repeat="true"
-				data-scroll-direction="vertical"
-				data-scroll-speed="5"
-			>
-				<ul class="col s4">
-					<li class="center-align">HTML</li>
-					<li class="center-align">CSS</li>
-					<li class="center-align">JavaScript</li>
-					<li class="center-align">jQuery</li>
-					<li class="center-align">React</li>
-					<li class="center-align">Redux</li>
-				</ul>
-				<ul class="col s4">
-					<li class="center-align">Node</li>
-					<li class="center-align">Express</li>
-					<li class="center-align">Handlebars</li>
-					<li class="center-align">EJS</li>
-					<li class="center-align">MongoDB</li>
-					<li class="center-align">Mongoose</li>
-				</ul>
-				<ul class="col s4">
-					<li class="center-align">Passport</li>
-					<li class="center-align">SQL</li>
-					<li class="center-align">mySQL</li>
-					<li class="center-align">Sequelize</li>
-					<li class="center-align">Jest</li>
-					<li class="center-align">Enzyme</li>
-				</ul>
+		<div data-scroll-section>
+			<div id="tech-skills" class="container small-space">
+				<h2
+					class="center-align fade-in header"
+					data-scroll
+					data-scroll-class="appear"
+					data-scroll-repeat="true"
+					data-scroll-direction="vertical"
+					data-scroll-speed="-2"
+				>
+					Tech Skills
+				</h2>
+				<div
+					class="row fade-in"
+					data-scroll
+					data-scroll-class="appear"
+					data-scroll-repeat="true"
+					data-scroll-direction="vertical"
+					data-scroll-speed="-3"
+				>
+					<ul class="col s4">
+						<li class="center-align">HTML</li>
+						<li class="center-align">CSS</li>
+						<li class="center-align">JavaScript</li>
+						<li class="center-align">jQuery</li>
+						<li class="center-align">React</li>
+						<li class="center-align">Redux</li>
+					</ul>
+					<ul class="col s4">
+						<li class="center-align">Node</li>
+						<li class="center-align">Express</li>
+						<li class="center-align">Handlebars</li>
+						<li class="center-align">EJS</li>
+						<li class="center-align">MongoDB</li>
+						<li class="center-align">Mongoose</li>
+					</ul>
+					<ul class="col s4">
+						<li class="center-align">Passport</li>
+						<li class="center-align">SQL</li>
+						<li class="center-align">mySQL</li>
+						<li class="center-align">Sequelize</li>
+						<li class="center-align">Jest</li>
+						<li class="center-align">Enzyme</li>
+					</ul>
+				</div>
 			</div>
 		</div>
 
 		<!-- Links -->
-		<div data-scroll-section class="flex-end smaller-space">
+		<div class="flex-end smaller-space" data-scroll-section>
 			<h2
 				style="margin-right: 100px"
 				class="fade-in header"
@@ -303,168 +318,47 @@
 				data-scroll-class="appear"
 				data-scroll-repeat="true"
 				data-scroll-direction="horizontal"
-				data-scroll-speed="7"
+				data-scroll-speed="5"
 			>
-				Links
+				Connect <i class="fas fa-handshake"></i>
 			</h2>
 		</div>
-		<div class="row small-space" data-scroll-section>
-			<a
-				data-scroll
-				data-scroll-class="appear"
-				data-scroll-repeat="true"
-				data-scroll-direction="horizontal"
-				data-scroll-speed="-0.5"
-				class="col s2 offset-s2 center-align fade-in"
-				href="tel:3303016846"
-			>
-				<p
-					id="my-phone"
-					class="text-center"
-					style="color: rgb(243, 243, 243); font-size: 3rem"
-				>
-					<i class="fas fa-phone"></i>
-				</p>
-			</a>
-			<a
-				data-scroll
-				data-scroll-class="appear"
-				data-scroll-repeat="true"
-				data-scroll-direction="horizontal"
-				data-scroll-speed="-0.5"
-				class="col s2 center-align fade-in"
-				href="mailto: jkole822@gmail.com"
-			>
-				<p
-					id="my-email"
-					class="text-center"
-					style="color: rgb(243, 243, 243); font-size: 3rem"
-				>
-					<i class="fas fa-envelope-open-text"></i>
-				</p>
-			</a>
-			<a
-				data-scroll
-				data-scroll-class="appear"
-				data-scroll-repeat="true"
-				data-scroll-direction="horizontal"
-				data-scroll-speed="0.5"
-				class="col s2 center-align fade-in"
-				href="https://github.com/jkole822/"
-				target="_blank"
-			>
-				<p
-					id="my-github"
-					class="text-center"
-					style="color: rgb(243, 243, 243); font-size: 3rem"
-				>
-					<i class="fab fa-github"></i>
-				</p>
-			</a>
-			<a
-				data-scroll
-				data-scroll-class="appear"
-				data-scroll-repeat="true"
-				data-scroll-direction="horizontal"
-				data-scroll-speed="0.5"
-				class="col s2 center-align fade-in"
-				href="https://www.linkedin.com/in/jkole822/"
-				target="_blank"
-			>
-				<p
-					id="my-linkedin"
-					class="text-center"
-					style="color: rgb(243, 243, 243); font-size: 3rem"
-				>
-					<i class="fab fa-linkedin"></i>
-				</p>
-			</a>
-		</div>
 
-		<!-- Projects -->
-		<div data-scroll-section class="smaller-space">
-			<h2
-				class="fade-in smaller-space header"
-				style="padding-left: 250px"
-				data-scroll
-				data-scroll-class="appear"
-				data-scroll-repeat="true"
-				data-scroll-direction="horizontal"
-				data-scroll-speed="-7"
-			>
-				My Work
-			</h2>
-			<div id="dropdown-container">
-				<select>
-					<option value="" disabled selected>Filter by Technology</option>
-					<option value="*">All</option>
-					<option value="Jquery">jQuery</option>
-					<option value="React">React</option>
-					<option value="Redux">Redux</option>
-					<option value="Node">Node</option>
-					<option value="Express">Express</option>
-					<option value="Handlebars">Handlebars</option>
-					<option value="Mongodb">MongoDB</option>
-					<option value="Mongoose">Mongoose</option>
-					<option value="Passport">Passport</option>
-					<option value="Sql">SQL</option>
-					<option value="Mysql">mySQL</option>
-					<option value="Sequelize">Sequelize</option>
-					<option value="Jest">Jest</option>
-					<option value="Enzyme">Enzyme</option>
-				</select>
-			</div>
-
+		<div data-scroll-section>
 			<div
-				id="my-projects"
 				data-scroll
 				data-scroll-class="appear"
 				data-scroll-repeat="true"
-				data-scroll-direction="vertical"
-				data-scroll-speed="1"
-				class="grid fade-in"
+				class="row fade-in big-space"
 			>
-				<% projects.forEach(function(project) { %> <% var techList = '' %> <%
-				project.technology.forEach(function(tech) { %> <% techList += tech + " "
-				%> <% }) %>
-				<div data-tech="<%= techList%>" class="card grid-item">
-					<div class="content">
-						<img
-							class="front project-image"
-							src="data:image/png;base64,<%= project.image.toString('base64') %>"
-						/>
-						<div class="back">
-							<% if (project.title) { %>
-							<p class="project-title"><%= project.title %></p>
-							<% } %> <% if (project.description) { %>
-							<p><%= project.description %></p>
-							<% } %> <% if (project.github) { %>
-							<p>
-								<a href="<%= project.github %>" target="_blank"
-									><i style="font-size: 2rem" class="fab fa-github"></i
-								></a>
-							</p>
-							<% } %> <% if (project.project_link) { %>
-							<p>
-								<a
-									href="<%= project.project_link %>"
-									target="_blank"
-									class="btn-small grey darken-3 grey-text waves-effect waves-light text-lighten-2"
-									>View Project</a
-								>
-							</p>
-							<% } %> <% if (project.technology.length) { %>
-							<p class="header-tech">Technology</p>
-							<ul>
-								<% project.technology.forEach(function(tech) { %>
-								<li><%= tech %></li>
-								<% }) %>
-							</ul>
-							<% } %>
-						</div>
-					</div>
-				</div>
-				<% }); %>
+				<a class="col s2 offset-s2 center-align" href="tel:3303016846">
+					<p class="text-center connect-icons">
+						<i class="fas fa-phone"></i>
+					</p>
+				</a>
+				<a class="col s2 center-align" href="mailto: jkole822@gmail.com">
+					<p class="text-center connect-icons">
+						<i class="fas fa-envelope-open-text"></i>
+					</p>
+				</a>
+				<a
+					class="col s2 center-align"
+					href="https://github.com/jkole822/"
+					target="_blank"
+				>
+					<p class="text-center connect-icons">
+						<i class="fab fa-github"></i>
+					</p>
+				</a>
+				<a
+					class="col s2 center-align"
+					href="https://www.linkedin.com/in/jkole822/"
+					target="_blank"
+				>
+					<p class="text-center connect-icons">
+						<i class="fab fa-linkedin"></i>
+					</p>
+				</a>
 			</div>
 		</div>
 
@@ -474,9 +368,6 @@
 		<script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
 		<!-- Materialize CSS JavaScript -->
 		<script type="text/javascript" src="./js/materialize.min.js"></script>
-		<!-- Isotope JavaScript -->
-		<script src="./js/isotope.pkgd.min.js"></script>
-		<script src="./js/packery-mode.pkgd.min.js"></script>
 		<!-- Front-End JavaScript -->
 		<script src="./js/index.js"></script>
 	</body>

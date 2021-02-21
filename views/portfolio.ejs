@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>JKG Portfolio</title>
+
+		<!--Import Google Icon Font-->
+		<link
+			href="https://fonts.googleapis.com/icon?family=Material+Icons"
+			rel="stylesheet"
+		/>
+
+		<!--Import Materialize CSS -->
+		<link
+			type="text/css"
+			rel="stylesheet"
+			href="./css/materialize.min.css"
+			media="screen,projection"
+		/>
+
+		<!-- Import Google Fonts: Righteous and Lato -->
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Lato&family=Righteous&display=swap"
+			rel="stylesheet"
+		/>
+
+		<!-- Import Font Awesome -->
+		<script
+			src="https://kit.fontawesome.com/3d80921411.js"
+			crossorigin="anonymous"
+		></script>
+
+		<!-- StyleSheet -->
+		<link rel="stylesheet" href="./css/style.css" />
+
+		<!--Let browser know website is optimized for mobile-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	</head>
+	<body>
+		<!-- White Background -->
+		<div id="project-background"></div>
+
+		<!-- Header -->
+		<h2
+			class="header center-align small-space"
+			style="color: rgb(78, 78, 78); margin-top: 100px"
+		>
+			Projects
+		</h2>
+
+		<!-- Home Button -->
+		<div class="row">
+			<a
+				class="btn-large waves-effect waves-dark grey lighten-3 grey-text text-darken-2 col s12 m2 offset-m5 smaller-space"
+				href="/"
+				>About Me <i class="fas fa-user-ninja right"></i
+			></a>
+		</div>
+
+		<!-- Dropdown -->
+		<div id="dropdown-container">
+			<select>
+				<option value="" disabled selected>Filter by Technology</option>
+				<option value="*">All</option>
+				<option value="Jquery">jQuery</option>
+				<option value="React">React</option>
+				<option value="Redux">Redux</option>
+				<option value="Node">Node</option>
+				<option value="Express">Express</option>
+				<option value="Handlebars">Handlebars</option>
+				<option value="Mongodb">MongoDB</option>
+				<option value="Mongoose">Mongoose</option>
+				<option value="Passport">Passport</option>
+				<option value="Sql">SQL</option>
+				<option value="Mysql">mySQL</option>
+				<option value="Sequelize">Sequelize</option>
+				<option value="Jest">Jest</option>
+				<option value="Enzyme">Enzyme</option>
+			</select>
+		</div>
+
+		<div id="my-projects" class="grid">
+			<% projects.forEach(function(project) { %> <% var techList = '' %> <%
+			project.technology.forEach(function(tech) { %> <% techList += tech + " "
+			%> <% }) %>
+			<div data-tech="<%= techList%>" class="card grid-item">
+				<div class="content">
+					<img
+						class="front project-image"
+						src="data:image/png;base64,<%= project.image.toString('base64') %>"
+					/>
+					<div class="back">
+						<% if (project.title) { %>
+						<p class="project-title"><%= project.title %></p>
+						<% } %> <% if (project.description) { %>
+						<p><%= project.description %></p>
+						<% } %> <% if (project.github) { %>
+						<p>
+							<a href="<%= project.github %>" target="_blank"
+								><i style="font-size: 2rem" class="fab fa-github"></i
+							></a>
+						</p>
+						<% } %> <% if (project.project_link) { %>
+						<p>
+							<a
+								href="<%= project.project_link %>"
+								target="_blank"
+								class="btn-small grey darken-3 grey-text waves-effect waves-light text-lighten-2"
+								>View Project</a
+							>
+						</p>
+						<% } %> <% if (project.technology.length) { %>
+						<p class="header-tech">Technology</p>
+						<ul>
+							<% project.technology.forEach(function(tech) { %>
+							<li><%= tech %></li>
+							<% }) %>
+						</ul>
+						<% } %>
+					</div>
+				</div>
+			</div>
+			<% }); %>
+		</div>
+
+		<!-- jQuery -->
+		<script src="https://code.jquery.com/jquery.js"></script>
+		<!-- Materialize CSS JavaScript -->
+		<script type="text/javascript" src="./js/materialize.min.js"></script>
+		<!-- Isotope JavaScript -->
+		<script src="./js/isotope.pkgd.min.js"></script>
+		<script src="./js/packery-mode.pkgd.min.js"></script>
+		<!-- Front-End JavaScript -->
+		<script src="./js/portfolio.js"></script>
+	</body>
+</html>
