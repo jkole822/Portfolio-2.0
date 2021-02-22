@@ -95,7 +95,7 @@
 	position: absolute;
 	top: 0;
 	background-color: rgb(255, 255, 255);
-	width: 100vw;
+	width: 100%;
 	height: 100vh;
 	z-index: -1;
 	clip-path: polygon(9% 0, 89% 9%, 100% 54%, 0 11%);
@@ -111,22 +111,55 @@
 #brand-statement {
 	text-align: justify;
 	line-height: 2.5;
+	max-width: 40em;
+}
+
+.btn-large {
+	border-radius: 8px;
 }
 /* About Me END */
 
+/* Tech Skills START  */
+.tech-skills-header {
+	font-family: "Lato", sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+	color: rgb(115, 115, 115);
+}
+/* Tech Skills ENDS */
+
 /* Projects START */
 #my-projects {
-	margin: 0 auto;
+	margin: 0 auto 96px auto;
 }
 
 .project-title {
+	font-family: "Righteous", cursive;
 	font-size: 1.25rem;
 	font-weight: bold;
+	letter-spacing: 0.05em;
+}
+
+.project-description {
+	margin-bottom: 2rem;
 }
 
 .header-tech {
-	font-size: 1.1rem;
+	font-size: 1rem;
 	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+	opacity: 0.7;
+	margin-bottom: 4px;
+}
+
+.tech-list {
+	margin-top: 0;
+	margin-bottom: 2rem;
+}
+
+.btn-small {
+	border-radius: 8px;
 }
 /* Projects END */
 
@@ -161,7 +194,7 @@
 	height: 100%;
 	width: 100%;
 	padding: 30px 20px 30px 20px;
-	overflow: scroll;
+	overflow: auto;
 	background: rgb(200, 200, 200);
 	color: rgb(55, 55, 55);
 	transform: rotateY(180deg);
@@ -194,17 +227,21 @@
 	margin: 0 auto 200px auto;
 	width: 70vw;
 }
-
-/* label focus color */
-.input-field input[type="text"]:focus + label {
-	color: rgb(133, 133, 133) !important;
-}
-/* label underline focus color */
-.input-field input[type="text"]:focus {
-	border-bottom: 1px solid #000;
-	box-shadow: 0 1px 0 0 #000;
-}
 /* Dropdown END */
+
+/* Connect Icons START */
+.connect-icons {
+	color: rgb(250, 250, 250);
+	font-size: 3rem;
+	transition: ease-in-out 250ms;
+}
+
+.connect-icons:hover {
+	color: rgb(250, 250, 250);
+	font-size: 3rem;
+	transform: scale(1.2);
+}
+/* Connect Icons END */
 
 /* General Styles START */
 html {
@@ -267,10 +304,6 @@ a {
 	margin-bottom: 80px;
 }
 
-.connect-icons {
-	color: rgb(250, 250, 250);
-	font-size: 3rem;
-}
 /* General Styles END */
 
 /* Medium and Large Screen Sizes */
