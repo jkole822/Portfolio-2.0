@@ -11,6 +11,13 @@ if (
 	$("#my-role").css("font-size", "1.25rem");
 }
 
+const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+
+$(document).ready(() => {
+	if (isSafari)
+		M.toast({ html: "Try an alternative browser for optimal viewing" });
+});
+
 // LocomotiveScroll
 const scroller = new LocomotiveScroll({
 	el: document.querySelector("[data-scroll-container]"),
