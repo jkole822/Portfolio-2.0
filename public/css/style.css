@@ -264,6 +264,10 @@ a {
 	color: rgb(55, 55, 55);
 }
 
+.align-center {
+	align-items: center;
+}
+
 .flex-start {
 	display: flex;
 	justify-content: flex-start;
