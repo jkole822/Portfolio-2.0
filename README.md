@@ -4,7 +4,7 @@
 
 ## Description
 
-My web development project portfolio. Portfolio projects are managed with separate [Project Manager](https://github.com/jkole822/Portfolio-Project-Manager).
+My web development project portfolio. Not current following the completion of OSU Bootcamp and finding employment as a Solutions Engineer. Portfolio projects are managed with separate [Project Manager](https://github.com/jkole822/Portfolio-Project-Manager).
 
 ## Table of Contents
 
